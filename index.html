@@ -128,13 +128,21 @@
             align-items: center;
         }
 
-        nav .logo {
+        /* nav .logo {
             font-size: 1.8rem;
             font-weight: 900;
             background: linear-gradient(135deg, #84cc16 0%, #a3e635 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            letter-spacing: -1px;
+            transition: transform 0.3s ease;
+        } */
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: black;            /* makes text black */
             letter-spacing: -1px;
             transition: transform 0.3s ease;
         }
@@ -348,6 +356,8 @@
             display: flex;
             justify-content: center;
         }
+
+        .info-card {
             background: rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(30px);
             -webkit-backdrop-filter: blur(30px);
@@ -902,6 +912,7 @@
                 padding: 1rem 2rem;
                 font-size: 0.95rem;
             }
+
         }
     </style>
 </head>
@@ -909,7 +920,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">DS</div>
+            <div class="logo">Dayanand.dev</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
